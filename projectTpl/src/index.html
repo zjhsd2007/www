@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="vendor/lib-flexible/build/flexible.js"></script>
+	<link rel="stylesheet" href="css/index.css">
+	<title>project template</title>
+</head>
+<body>    
+   <div class="wrap">
+	   <button id="J_get" class="btn">Get</button>
+	   <div id="J_show"></div>
+   </div>
+   <script type="text/tmpl" id="listTpl">
+    <% for(var i = 0,len = list.length; i<len; i++){ %>
+        <li class="cleafix">
+            <p><%= list[i].name%></p>
+            <p><%= list[i].age%></p>
+            <p><%= list[i].email%></p>
+            <img src="<%= list[i].img%>" />
+            <a href="<%= list[i].url%>">blog</a>
+        </li>
+    <% } %>
+</script>
+   <script src="vendor/zepto/zepto.min.js"></script>
+   <script src="js/index.js"></script>
+</body>
+</html>

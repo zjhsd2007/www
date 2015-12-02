@@ -1,0 +1,21 @@
+@import "var";
+@import "function";
+@import "mixin";
+@import "reset";
+
+.wrap {
+  width:px2rem(750);
+  height:px2rem(500);
+  @include font-dpr
+}
+.btn {
+  width:px2rem(180);
+  height:px2rem(80);
+  @include font-dpr(20);
+  display: inline-block;
+}
+
+li {
+  border-bottom:1px solid #ddd;
+  padding:10px;
+}

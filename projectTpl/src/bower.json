@@ -1,0 +1,20 @@
+{
+  "name": "project template",
+  "version": "1.0.0",
+  "authors": [
+    "Junhui Zhang <jhzhang@bainainfo.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "zepto": "~1.1.6",
+    "swiper": "~3.2.0",
+    "lib-flexible": "https://github.com/amfe/lib-flexible.git"
+  }
+}

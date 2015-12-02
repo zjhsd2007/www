@@ -1,0 +1,28 @@
+@mixin clearfix{
+  &::after {
+    display: block;
+    clear:both;
+    content: '';
+    font-size: 0;
+  }
+}
+
+@mixin dis-ilb {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@mixin fill {
+  display: block;
+  width: 100%;
+}
+
+@mixin font-dpr($size:$globalFontSize){
+  font-size:$size+px;
+  [data-dpr="2"] &{
+    font-size: $size * 2 + px;
+  };
+  [data-dpr="3"] &{
+    font-size: $size * 3 + px;
+  };
+}

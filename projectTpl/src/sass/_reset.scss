@@ -1,0 +1,22 @@
+body, h1, h2, h3, h4, h5, h6, hr, div, p,blockquote,dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea,th, td, img{
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+html,body {
+  width: 100%;
+  -webkit-overflow-scrolling:touch;
+}
+body {
+  font-family:San francisco,roboto,"Classic Grotesque W01","Hiragino Sans GB","STHeiti","Microsoft YaHei","WenQuanYi Micro Hei",Arial,SimSun,sans-serif;
+  font-size: $globalFontSize;
+  line-height: $globalLineHeight;
+  color:$globalFontColor;}
+
+ul, ol, li{
+  list-style:none;
+}
+a {
+  text-decoration: none;
+  color:$globalFontColor;
+}
