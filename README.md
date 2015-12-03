@@ -64,6 +64,7 @@ $.ajax({
 src里面就是我们放项目源码的地方，vendor用来存放第三方的JS库，通过bower install来安装，比如‘bower install --save jquery’,注意在这里安装完第三方库后，千万记得在config.js里加上你用到的文件，不然打包的时候遗漏了文件。
 
 页面的css写到sass文件夹下的index.scss里面，因为我们做的移动端项目都比较小，所以就没有分多个文件，如果你的项目比较大，可以折分成多个scss文件，这个就比较随意了，一个比较方便的东西就是这里定义了一个@function，用来将px转换成rem,还一个@mixin，用来自动转换字体大小，在开发项目的时候，我们拿到的效果图一般都是750PX宽度(如果你的效果图不是750的宽度，需要修改_var.scss里的$baseFontSize,比如效果图宽度是600，则将它改成60即可)，制作html的时候，我们就可以直接按照效果图的大小来设置，只需要将值传进px2rem这个function里面，比如
+
 ```css
 .col {
 	width:px2rem(300)  /*这里最终输出的将会是4rem*/
@@ -80,6 +81,7 @@ npm i
 说明一下，我现在的node版本是v4.0.0,npm的版本是2.7.3，如果你用的是最新版本的node和npm ,gulp-sass这个模块可能会出错，你可以将它换成gulp-ruby-sass也可以。
 
 ## 试用一下
+
 我们新建一个项目名叫：myProject
 
 1. 首先复制projectTpl文件夹至同级目录，并将它重命名为myProject
