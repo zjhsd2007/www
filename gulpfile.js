@@ -11,8 +11,7 @@ var gulp = require('gulp'),
     cssBase64 = require('gulp-css-base64'),
     del = require('del'),
     browsersync = require('browser-sync').create(),
-    mock = require('mockjs'),
-    config = require('./gulp.config');
+    mock = require('mockjs');
 
 var DEVELOPMENT = true;
 var argvs = process.argv.slice(3);
@@ -22,6 +21,7 @@ var basePath = './'+ projectName;
 var srcPath = basePath +'/src';
 var buildPath = basePath + '/build';
 var dataTpl = require(basePath + '/data/data');
+var config = require(srcPath + '/config');
 var createResData = function(data,status,msg){
     return {
         msg:msg||'',
