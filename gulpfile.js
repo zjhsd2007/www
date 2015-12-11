@@ -20,7 +20,7 @@ var port = argvs[1] && argvs[1].slice(2) || 8080;
 var basePath = './'+ projectName;
 var srcPath = basePath +'/src';
 var buildPath = basePath + '/build';
-var dataTpl = require(basePath + '/data/data');
+var dataTpl = require(srcPath + '/data');
 var config = require(srcPath + '/config');
 var createResData = function(data,status,msg){
     return {
